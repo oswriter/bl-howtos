@@ -6,7 +6,7 @@ BL does not use a traditional desktop like [GNOME](http://www.gnome.org/) or [Xf
 
 I was a CrunchBang user and currently use BL as the operating system on my main work computer. Overall, BL offers a fast, uncluttered Debian experience. Here is a brief rundown of how I configured the various BL components to best serve my needs.
 
-![bl-desktop](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-desktop-768x614.png)
+![bl-desktop](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-desktop.png)
 
 ### Openbox
 
@@ -31,7 +31,7 @@ Speaking of the menu, Openbox uses this floating right-click menu in lieu of the
 
 But unlike the menu system in desktop environments like Xfce, the Openbox menu does not automatically update itself when new software is installed (with the exception of applications installed through the BL pipemenus). This means the user is responsible for manually updating the menu. This can be done either through the configuration file, located at **~/.config/openbox/menu.xml**, or through a graphical menu editor called [obmenu](http://obmenu.sourceforge.net/). You can access obmenu from the BL menu by clicking **Preferences --> Openbox --> GUI Menu Editor**.
 
-![bl-obmenu](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-obmenu.png)
+![bl-obmenu](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-obmenu.png)
 
 In my case, I used obmenu to delete most of the Openbox menu. I prefer to use the keybinds and taskbar to launch applications. So I removed everything except the items for Places, Recent Files, Preferences, et cetera.
 
@@ -101,7 +101,7 @@ I edited **tint2rc-bottom** by changing the item labeled **panel_items** from **
 
 For this task it may be helpful to install tint2 0.12 from the [Jessie Backports](https://wiki.debian.org/Backports) repository. BL ships with tint2 0.11. The main difference in 0.12 is that you don't need to type out the full file pathname for desktop icons. I actually have 0.12 installed but still chose to type out the full pathnames. You'll also notice I commented out (#) the first four items, which are the default BL applications. All of these applications have keybinds, so I found the launcher icons redundant. Here is what my modified launcher bar looks like:
 
-![bl-tint2-launcher](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-tint2-launcher.png)
+![bl-tint2-launcher](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-tint2-launcher.png)
 
 To display this bottom panel, I opened the BL Tint2 Manager by selecting **Preferences --> Tint2 --> Tint2 Chooser** from the Openbox menu and checked the box next to **tint2/tint-bottom**.
 
@@ -109,7 +109,7 @@ To display this bottom panel, I opened the BL Tint2 Manager by selecting **Prefe
 
 Next, I modified the top panel. I changed the panel items from **LTSC** to **TCS**, eliminating the now-unnecessary taskbar and moving the clock before the system tray. The taskbar displays all of the virtual workspaces available. BL sets 2 workspaces by default. I prefer 4. To add desktops, click on **Preferences --> Openbox --> GUI Config Tool**. This opens the aptly named Openbox Configuration Manager [ObConf](http://openbox.org/wiki/ObConf:About), which includes a tab for changing the number of workspaces.
 
-![bl-obconf](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-obconf.png)
+![bl-obconf](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-obconf.png)
 
 I also changed **taskbar_name = 1** to **taskbar_name = 0**. This displays the number of each workspace (1-4) on the taskbar.
 
@@ -126,23 +126,23 @@ This displays the current date and time as **Wed-21-Sep, 3:16 PM**. Each convers
 - %M is the minute as a decimal number (16); and
 - %p is the AM/PM designation. 
 
-![bl-tint2-top](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-tint2-top-768x18.png)
+![bl-tint2-top](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-tint2-top-768x18.png)
 
 ### Conky
 
 Conky is a system monitor that can display a wide variety of information on your desktop. BL retains the classic Conky configuration used by Crunchbang, which displays basic system information--disk space, RAM, CPU, and a list of pre-configured keyboard shortcuts--in a transparent box on the right side of the screen. In addition to this default setup, BL includes a graphical Conky tool that offers a number of additional pre-configured Conky displays.
 
-![bl-conky-manager](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-conky-manager.png)
+![bl-conky-manager](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-conky-manager.png)
 
 I opted to replace the Crunchbang-style Conky with the simpler **Top.conkyrc** provided by the manager. 
 
-![bl-conky-1](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-conky-1.png)
+![bl-conky-1](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-conky-1.png)
 
 ### Nitrogen
 
 BL offers a limited choice of wallpapers, mostly variants on a simple gray background with the BunsenLabs "flame" logo. There is an optional package, **bunsen-images-extra**, available from the BL repository that contains some additional wallpapers. But if you want to add or change the wallpaper, you need to use [Nitrogen](http://projects.l3ib.org/nitrogen/), a simple background browser and setting tool. 
 
-![bl-nitrogen](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-nitrogen.png)
+![bl-nitrogen](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-nitrogen.png)
 
 You must configure Nitrogen to display the contents of directories containing the images you want to use as backgrounds. Click on **Preferences** at the bottom of the Nitrogen window, and a dialog box appears that allows you to add or remove directories. 
 
@@ -156,7 +156,7 @@ To install Caja, just open a terminal and enter:
 
         sudo apt install caja
         
-![bl-caja](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-caja-2.png)
+![bl-caja](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-caja-2.png)
 
 ### System Theme and Icons
 
@@ -168,7 +168,7 @@ Vibrancy works with any GTK-based desktop such as Openbox. You can download a De
 
 To browse and select from among the Vibrancy icon sets, run [lxappearance](https://wiki.lxde.org/en/LXAppearance), a program imported from the LXDE desktop that lets you customize the look and feel of the desktop.  
 
-![bl-lxappearance](http://opensourcewriter.com/wp-content/uploads/2016/09/2016-09-18-bl-lxappearance.png)
+![bl-lxappearance](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-lxappearance.png)
 
 I also used lxappearance to change the system theme from the default "Bunsen" to "Bunsen-Blue."
 
