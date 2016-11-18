@@ -126,7 +126,7 @@ This displays the current date and time as **Wed-21-Sep, 3:16 PM**. Each convers
 - %M is the minute as a decimal number (16); and
 - %p is the AM/PM designation. 
 
-![bl-tint2-top](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-tint2-top-768x18.png)
+![bl-tint2-top](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-tint2-top.png)
 
 ### Conky
 
