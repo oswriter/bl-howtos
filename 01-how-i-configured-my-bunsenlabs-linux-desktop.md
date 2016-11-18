@@ -136,7 +136,7 @@ Conky is a system monitor that can display a wide variety of information on your
 
 I opted to replace the Crunchbang-style Conky with the simpler **Top.conkyrc** provided by the manager. 
 
-![bl-conky-1](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-conky-1.png)
+![bl-conky-1](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-conky.png)
 
 ### Nitrogen
 
@@ -156,7 +156,7 @@ To install Caja, just open a terminal and enter:
 
         sudo apt install caja
         
-![bl-caja](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-caja-2.png)
+![bl-caja](https://github.com/oswriter/bl-howtos/blob/master/images/2016-09-18-bl-caja.png)
 
 ### System Theme and Icons
 
